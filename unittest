@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace projectDemo
+{
+   public class phanso
+    {
+       
+            private int tu;
+            private int mau;
+
+            public phanso(int tu, int mau)
+            {
+                this.tu = tu;
+                this.mau = mau;
+            }
+            public override bool Equals(object obj)
+            {
+                if (obj == null) return false;
+                phanso ps = (phanso)obj;
+                return (ps.tu == tu && ps.mau == mau);
+
+            }
+
+        
+    }
+}
